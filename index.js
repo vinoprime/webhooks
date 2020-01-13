@@ -5,20 +5,21 @@ var express = require('express'),
 
 app.use(bodyParser.json());
 
-app.post('/', function (req, res) {
-    var body = req.body;
-    var trackingNumber = body.msg.tracking_number;
-    var slug = body.msg.slug;
-    var token = body.msg.unique_token;
+app.post('/', function(req, res) {
+    // var body = req.body;
+    // var trackingNumber = body.msg.tracking_number;
+    // var slug = body.msg.slug;
+    // var token = body.msg.unique_token;
 
-    console.log(trackingNumber, slug, token);
+    // console.log(trackingNumber, slug, token);
+    console.log(req.body)
 
     res.json({
         message: 'ok got it!'
     });
 });
 
-var server = app.listen(port, function () {
+var server = app.listen(port, function() {
 
     var host = server.address().address
     var port = server.address().port
