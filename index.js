@@ -13,6 +13,7 @@ app.post('/', function(req, res) {
 
     // console.log(trackingNumber, slug, token);
     console.log(req.body)
+    console.log("Got")
 
     res.json({
         message: 'ok got it!'
