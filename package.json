@@ -16,6 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.10.1",
-    "express": "^4.10.7"
+    "express": "^4.17.3"
   }
 }
